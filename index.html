@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SolucionaTodo AI - Resuelve cualquier problema del día a día con inteligencia artificial. Manchas, gadgets rotos, recetas, plantas y más. ¡Gratis y al instante!">
+    <meta name="keywords" content="soluciones IA, limpiar manchas, reparar gadgets, recetas, diagnóstico plantas, organización, ideas creativas, AI gratis, asistente inteligente, chatbot IA, herramientas gratis online">
+    <meta name="author" content="SolucionaTodo AI">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="Spanish">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#3b82f6">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://solucionatodo.ai/">
+    <meta property="og:title" content="SolucionaTodo AI - Soluciones Inteligentes para Problemas Cotidianos">
+    <meta property="og:description" content="IA inteligente para resolver manchas, gadgets, recetas, plantas y más. Soluciones paso a paso en segundos.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1677442d019cecf482f80b0cf199cabc3dc12f21e?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="SolucionaTodo AI">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://solucionatodo.ai/">
+    <meta name="twitter:title" content="SolucionaTodo AI - Soluciones Inteligentes">
+    <meta name="twitter:description" content="Resuelve cualquier problema con IA. Manchas, gadgets, recetas y más.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1677442d019cecf482f80b0cf199cabc3dc12f21e?w=1200&h=630&fit=crop">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://solucionatodo.ai/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>🛠️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><text y='130' font-size='130'>🛠️</text></svg>">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5496281216080457" crossorigin="anonymous"></script>
+    
+    <!-- Structured Data (Schema.org) - WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "SolucionaTodo AI",
+      "url": "https://solucionatodo.ai/",
+      "description": "Asistente IA inteligente para resolver problemas cotidianos al instante",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1250",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SolucionaTodo AI",
+      "url": "https://solucionatodo.ai",
+      "logo": "https://solucionatodo.ai/logo.png",
+      "description": "Soluciones inteligentes para problemas del día a día con IA"
+    }
+    </script>
+
+    <title>SolucionaTodo AI - Soluciones IA Gratis para Problemas Cotidianos | Manchas, Gadgets, Recetas</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: rgba(15, 23, 42, 0.98);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #3b82f6;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+            text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .logo-icon {
+            width: 28px;
+            height: 28px;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            font-weight: 500;
+            position: relative;
+            padding-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #3b82f6;
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* HEADER HERO */
+        header {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1e40af 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+            animation: slideDown 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(30px); }
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+            font-weight: 300;
+        }
+
+        .search-container {
+            display: flex;
+            gap: 10px;
+            margin: 2rem auto;
+            max-width: 700px;
+            animation: fadeIn 0.8s ease-out 0.3s both;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            background: white;
+        }
+
+        .search-input:focus {
+            outline: none;
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.4);
+            transform: scale(1.02);
+            border-color: #3b82f6;
+        }
+
+        .search-btn {
+            padding: 15px 30px;
+            background: white;
+            color: #3b82f6;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            background: #f1f5f9;
+        }
+
+        .search-btn:active {
+            transform: translateY(-1px);
+        }
+
+        /* PREVIEW IMAGE */
+        .preview-banner {
+            width: 100%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .preview-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            max-height: 400px;
+        }
+
+        /* ABOUT SECTION */
+        .about-section {
+            padding: 5rem 2rem;
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .about-text h2 {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .about-text p {
+            color: #64748b;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-box {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #3b82f6;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.2);
+            border-left: 4px solid #2563eb;
+        }
+
+        .feature-box h3 {
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-box p {
+            color: #64748b;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            border-radius: 20px;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 400px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(59, 130, 246, 0.3);
+        }
+
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .about-image-icon {
+            font-size: 8rem;
+            opacity: 0.8;
+            position: relative;
+            z-index: 1;
+            animation: bounce 3s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* MODULES SECTION */
+        .modules-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #64748b;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .module-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: fadeInUp 0.6s ease-out;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .module-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .module-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .module-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(59, 130, 246, 0.2);
+            border-color: #3b82f6;
+        }
+
+        .module-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: bounce 3s ease-in-out infinite;
+        }
+
+        .module-card h3 {
+            font-size: 1.5rem;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .module-card p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .module-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            font-weight: 600;
+        }
+
+        .module-btn:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+        }
+
+        /* HOW IT WORKS SECTION */
+        .how-it-works {
+            padding: 5rem 2rem;
+            background: white;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step-card {
+            text-align: center;
+            padding: 2.5rem;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            transition: all 0.3s;
+            animation: fadeInUp 0.6s ease-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.15);
+            border-color: #3b82f6;
+            background: white;
+        }
+
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        .step-card h3 {
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .step-card p {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        /* FEATURES SECTION */
+        .features-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s;
+            animation: fadeInUp 0.6s ease-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.15);
+            border-color: #3b82f6;
+        }
+
+        .feature-card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .feature-card p {
+            color: #64748b;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        /* TESTIMONIALS SECTION */
+        .testimonials-section {
+            padding: 5rem 2rem;
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #3b82f6;
+            transition: all 0.3s;
+            animation: fadeInUp 0.6s ease-out;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 4rem;
+            color: rgba(59, 130, 246, 0.1);
+            font-family: Georgia, serif;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.15);
+            border-left: 4px solid #2563eb;
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            flex-shrink: 0;
+            border: 3px solid white;
+        }
+
+        .testimonial-info h4 {
+            color: #0f172a;
+            margin-bottom: 0.2rem;
+            font-weight: 600;
+        }
+
+        .testimonial-info p {
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+
+        .testimonial-rating {
+            color: #f59e0b;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-card p {
+            color: #475569;
+            line-height: 1.8;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* FAQ SECTION */
+        .faq-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            animation: fadeInUp 0.6s ease-out;
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            font-weight: 600;
+            color: #0f172a;
+            user-select: none;
+        }
+
+        .faq-question:hover {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 1.5rem;
+            max-height: 500px;
+        }
+
+        .faq-answer p {
+            color: #475569;
+            line-height: 1.8;
+        }
+
+        /* MODAL */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            backdrop-filter: blur(3px);
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            animation: slideUp 0.3s ease;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #f1f5f9;
+        }
+
+        .modal-header h2 {
+            font-size: 1.8rem;
+            color: #0f172a;
+            margin: 0;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #64748b;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .close-btn:hover {
+            color: #0f172a;
+            background: #f1f5f9;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+        }
+
+        .solution-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 900px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            display: none;
+            animation: slideIn 0.5s ease-out;
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .solution-card.active {
+            display: block;
+        }
+
+        .solution-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid #f1f5f9;
+        }
+
+        .solution-title h2 {
+            font-size: 2rem;
+            color: #0f172a;
+            margin: 0;
+        }
+
+        .solution-actions {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .action-btn {
+            padding: 0.8rem 1.5rem;
+            background: #f1f5f9;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .action-btn:hover {
+            background: #3b82f6;
+            color: white;
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+        }
+
+        /* IDEAS GRID - MEJORADO */
+        .ideas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .idea-card {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #3b82f6;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .idea-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2);
+            border-left: 4px solid #2563eb;
+            background: linear-gradient(135deg, #dbeafe 0%, #cffafe 100%);
+        }
+
+        .idea-card p {
+            color: #0f172a;
+            line-height: 1.6;
+            margin: 0;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .ideas-intro, .ideas-closing {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border-left: 4px solid #8b5cf6;
+            margin-bottom: 1.5rem;
+            color: #475569;
+            line-height: 1.8;
+        }
+
+        .ideas-closing {
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            border-left: 4px solid #ec4899;
+        }
+
+        .spinner {
+            border: 4px solid #e2e8f0;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* ADS */
+        .ads-container {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+        }
+
+        ins.adsbygoogle {
+            display: inline-block;
+            width: 100%;
+            max-width: 728px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0f172a;
+            color: #e2e8f0;
+            padding: 3rem 2rem 1rem;
+            text-align: center;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .footer-section h3 {
+            color: #3b82f6;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .footer-section p, .footer-section a {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            transition: all 0.3s;
+            display: block;
+        }
+
+        .footer-section a:hover {
+            color: #3b82f6;
+            transform: translateX(5px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #334155;
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #e2e8f0;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: inline;
+        }
+
+        .footer-links a:hover {
+            color: #3b82f6;
+        }
+
+        .main-content {
+            padding: 2rem;
+            background: white;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .about-image {
+                min-height: 300px;
+            }
+
+            .about-image-icon {
+                font-size: 5rem;
+            }
+
+            .preview-banner {
+                margin: 1rem auto;
+                border-radius: 15px;
+            }
+
+            .modal-content {
+                margin: 1rem;
+            }
+
+            .search-container {
+                flex-direction: column;
+            }
+
+            .search-input, .search-btn {
+                width: 100%;
+            }
+
+            .ideas-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        /* ACCESSIBILITY */
+        a:focus, button:focus {
+            outline: 2px solid #3b82f6;
+            outline-offset: 2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a onclick="goHome()" class="logo">
+                <span class="logo-icon">🛠️</span>
+                SolucionaTodo AI
+            </a>
+            <ul>
+                <li><a onclick="scrollToAbout()">Acerca de</a></li>
+                <li><a onclick="scrollToModules()">Módulos</a></li>
+                <li><a onclick="scrollToHowItWorks()">Cómo funciona</a></li>
+                <li><a onclick="scrollToTestimonials()">Reseñas</a></li>
+                <li><a onclick="scrollToFAQ()">Preguntas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>🚀 Soluciona Cualquier Problema</h1>
+            <p class="subtitle">IA inteligente para resolver problemas del día a día. Rápido, fácil y confiable.</p>
+            
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="main-search" 
+                    class="search-input" 
+                    placeholder="Describe tu problema... (ej: mancha de vino, planta marchita)"
+                    aria-label="Barra de búsqueda para problemas"
+                >
+                <button class="search-btn" id="search-btn" aria-label="Buscar solución">🔍 Buscar</button>
+            </div>
+
+            <!-- PREVIEW IMAGE -->
+            <div class="preview-banner">
+                <img src="https://images.unsplash.com/photo-1677442d019cecf482f80b0cf199cabc3dc12f21e?w=1200&h=400&fit=crop" alt="SolucionaTodo AI - Soluciones inteligentes con IA para problemas cotidianos" loading="lazy">
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>¿Qué es SolucionaTodo AI?</h2>
+                    <p>SolucionaTodo AI es tu asistente inteligente para resolver problemas cotidianos en segundos. Utilizamos tecnología de IA avanzada para proporcionar soluciones prácticas, detalladas y confiables.</p>
+                    <p>Ya sea una mancha difícil, un dispositivo roto, una receta para preparar, plantas enfermas, regalos perfectos, organización del hogar o cualquier otro problema, tenemos la solución perfecta para ti. Completamente gratis y disponible 24/7.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-box">
+                            <h3>⚡ Instantáneo</h3>
+                            <p>Soluciones en segundos, sin esperas.</p>
+                        </div>
+                        <div class="feature-box">
+                            <h3>📱 Disponible 24/7</h3>
+                            <p>Tu asistente siempre disponible.</p>
+                        </div>
+                        <div class="feature-box">
+                            <h3>✨ Práctico</h3>
+                            <p>Consejos reales que funcionan.</p>
+                        </div>
+                        <div class="feature-box">
+                            <h3>🎯 Preciso</h3>
+                            <p>Adaptado a tu situación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-icon">🤖</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODULES SECTION -->
+    <section class="modules-section" id="modules">
+        <div class="container">
+            <h2 class="section-title">🔥 TOP 9 MÓDULOS IA MÁS ÚTILES</h2>
+            <p class="section-subtitle">Herramientas independientes para cada situación. Solo ingresa tus datos y obtén la solución al instante.</p>
+
+            <div class="modules-grid">
+                <div class="module-card" onclick="openModal('stain')" role="button" tabindex="0" onkeypress="handleKeyPress(event, 'stain')">
+                    <div class="module-icon" aria-hidden="true">🧽</div>
+                    <h3>StainEraser TXT</h3>
+                    <p><strong>Limpieza de manchas</strong></p>
+                    <p>Describe la mancha + material → solución exacta paso a paso.</p>
+                    <button class="module-btn">Abrir módulo</button>
+                </div>
+
+                <div class="module-card" onclick="openModal('fixbot')" role="button" tabindex="0" onkeypress="handleKeyPress(event, 'fixbot')">
+                    <div class="module-icon" aria-hidden="true">🔧</div>
+                    <h3>FixBot TXT</h3>
+                    <p><strong>Arreglo de gadgets</strong></p>
+                    <p>Falla → diagnóstico → pruebas rápidas → solución.</p>
+                    <button class="module-btn">Abrir módulo</button>
+                </div>
+
+                <div class="module-card" onclick="openModal('chef')" role="button" tabindex="0" onkeypress="handleKeyPress(event, 'chef')">
+                    <div class="module-icon" aria-hidden="true">🍳</div>
+                    <h3>ChefAI TXT</h3>
+                    <p><strong>Recetas con lo que tienes</strong></p>
+                    <p>Ingredientes → receta personalizada → nivel de dificultad.</p>
+                    <button class="module-btn">Abrir módulo</button>
+                </div>
+
+                <div class="module-card" onclick="openModal('plant')" role="button" tabindex="0" onkeypress="handleKeyPress(event, 'plant')">
+                    <div class="module-icon" aria-hidden="true">🌿</div>
+                    <h3>PlantDoctor TXT</h3>
+                    <p><strong>Diagnóstico de plantas</strong></p>
+                    <p>Síntomas → causa → tratamiento → cuidados futuros.</p>
+                    <button class="module-btn">Abrir módulo</button>
+                </div>
+
+                <div class="module-card" onclick="openModal('gift')" role="button" tabindex="0" onkeypress="handleKeyPress(event, 'gift')">
+                    <div class="module-icon" aria-hidden="true">🎁</div>
+                    <h3>GiftFinder TXT</h3>
+                    <p><strong>Buscador de regalos</strong></p>
+                    <p>Persona → intereses → propuestas de regalos perfectos.</p>
+                    <button class="module-btn">Abrir módulo</button>
+                </div>
+
+                <div class="module-card" onclick="openModal('laundry')" role="button" tabindex="0" onkeypress="handleKeyPress(event, 'laundry')">
+                    <div class="module-icon" aria-hidden="true">🧺</div>
+                    <h3>LaundryMaster TXT</h3>
+                    <p><strong>Problemas con ropa</strong></p>
+                    <p>Problema → solución → prevención para el futuro.</p>
+                    <button class="module-btn">Abrir módulo</button>
+                </div>
+
+                <div class="module-card" onclick="openModal('clutter')" role="button" tabindex="0" onkeypress="handleKeyPress(event, 'clutter')">
+                    <div class="module-icon" aria-hidden="true">📦</div>
+                    <h3>ClearClutter TXT</h3>
+                    <p><strong>Organización del hogar</strong></p>
+                    <p>Zona → nivel desorden → plan de organización en 10 min.</p>
+                    <button class="module-btn">Abrir módulo</button>
+                </div>
+
+                <div class="module-card" onclick="openModal('flavor')" role="button" tabindex="0" onkeypress="handleKeyPress(event, 'flavor')">
+                    <div class="module-icon" aria-hidden="true">🧂</div>
+                    <h3>FlavorFix TXT</h3>
+                    <p><strong>Arreglar comida arruinada</strong></p>
+                    <p>Error → arreglo instantáneo → opciones alternativas.</p>
+                    <button class="module-btn">Abrir módulo</button>
+                </div>
+
+                <div class="module-card" onclick="openModal('ideas')" role="button" tabindex="0" onkeypress="handleKeyPress(event, 'ideas')">
+                    <div class="module-icon" aria-hidden="true">🧠</div>
+                    <h3>IdeaBooster TXT</h3>
+                    <p><strong>Generador universal de ideas</strong></p>
+                    <p>Tema → 20 ideas creativas al instante.</p>
+                    <button class="module-btn">Abrir módulo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">¿Cómo Funciona?</h2>
+            <p class="section-subtitle">3 pasos simples para obtener tu solución.</p>
+
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1️⃣</div>
+                    <h3>Describe tu problema</h3>
+                    <p>Usa la barra de búsqueda o abre un módulo específico. Sé lo más detallado posible para mejores resultados.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2️⃣</div>
+                    <h3>IA analiza y procesa</h3>
+                    <p>Nuestra IA avanzada analiza tu problema en tiempo real usando algoritmos de última generación.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3️⃣</div>
+                    <h3>Recibe la solución</h3>
+                    <p>Obtén una guía detallada paso a paso, lista para aplicar inmediatamente con confianza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <h2 class="section-title">✨ Por Qué Elegirnos</h2>
+            <p class="section-subtitle">Somos la plataforma más confiable para soluciones rápidas y prácticas.</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card-icon">🎯</div>
+                    <h3>100% Preciso</h3>
+                    <p>Soluciones verificadas y probadas. Nuestras respuestas se basan en mejores prácticas industriales y experiencia comprobada.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">⚡</div>
+                    <h3>Ultra Rápido</h3>
+                    <p>Resultados en segundos. Obtén respuestas instantáneas sin esperas ni demoras.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">💰</div>
+                    <h3>100% Gratis</h3>
+                    <p>Cero costo. Accede a todos los módulos sin pagar nunca, sin sorpresas.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">🌍</div>
+                    <h3>Acceso Global</h3>
+                    <p>Disponible desde cualquier lugar. Funciona perfectamente en desktop y móvil.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">🛡️</div>
+                    <h3>Privacidad Total</h3>
+                    <p>Tus datos son seguros. No almacenamos información innecesaria jamás.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">🤝</div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Siempre disponible. Tu asistente nunca duerme, trabaja para ti todo el tiempo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">⭐ Lo que dicen nuestros usuarios</h2>
+            <p class="section-subtitle">Historias reales de personas que resolvieron sus problemas con SolucionaTodo AI.</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar" aria-hidden="true">👩</div>
+                        <div class="testimonial-info">
+                            <h4>Ana García</h4>
+                            <p>Madre y blogger</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="Calificación de 5 estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"¡Increíble! Me salvó de una mancha de vino tinto justo antes de una cena importante. Las instrucciones fueron claras y efectivas. ¡Totalmente recomendado!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar" aria-hidden="true">👨</div>
+                        <div class="testimonial-info">
+                            <h4>Carlos Pérez</h4>
+                            <p>Entusiasta del DIY</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="Calificación de 5 estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"Usé la app para arreglar mi cafetera. Me dio los pasos exactos y ahora funciona perfectamente. Ahorré tiempo y dinero. Es mi nueva herramienta favorita."</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar" aria-hidden="true">👩‍🌾</div>
+                        <div class="testimonial-info">
+                            <h4>Laura Fernández</h4>
+                            <p>Amante de las plantas</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="Calificación de 5 estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"Mis plantas estaban muriendo y no sabía por qué. Subí una foto y SolucionaTodo AI diagnosticó el problema al instante. ¡Mis orquídeas han vuelto a florecer!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar" aria-hidden="true">👨‍💼</div>
+                        <div class="testimonial-info">
+                            <h4>Juan López</h4>
+                            <p>Emprendedor tech</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="Calificación de 5 estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"Uso IdeaBooster casi a diario para contenido. 20 ideas creativas en segundos. Ha aumentado mi productividad un 300%. Inversión del mejor valor."</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar" aria-hidden="true">👩‍🍳</div>
+                        <div class="testimonial-info">
+                            <h4>María Rodríguez</h4>
+                            <p>Chef de hogar</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="Calificación de 5 estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"ChefAI cambió mi vida. Ya no vuelvo a dejar comida sin arreglar. Las soluciones son instantáneas y siempre funcionan. ¡Gracias!"</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar" aria-hidden="true">👨‍🏫</div>
+                        <div class="testimonial-info">
+                            <h4>David Torres</h4>
+                            <p>Profesor de tecnología</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating" aria-label="Calificación de 5 estrellas">⭐⭐⭐⭐⭐</div>
+                    <p>"Perfecto para mis clases. Enseño a mis estudiantes cómo resolver problemas prácticos. La IA da respuestas educativas y útiles. 10/10."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADS SECTION -->
+    <div class="ads-container">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-5496281216080457"
+            data-ad-slot="AUTO"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+    </div>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">❓ Preguntas Frecuentes</h2>
+            <p class="section-subtitle">Resolvemos tus dudas más comunes sobre SolucionaTodo AI.</p>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" onkeypress="toggleFaqKeyboard(event)">
+                        <span>¿Cómo funciona SolucionaTodo AI?</span>
+                        <span class="faq-toggle" aria-hidden="true">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simplemente describe tu problema en la barra de búsqueda o selecciona un módulo específico. Nuestra IA avanzada analiza tu pregunta en tiempo real y te proporciona una guía paso a paso detallada con consejos prácticos y confiables.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" onkeypress="toggleFaqKeyboard(event)">
+                        <span>¿Es seguro seguir las soluciones de la IA?</span>
+                        <span class="faq-toggle" aria-hidden="true">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nuestras soluciones se basan en métodos comprobados y prácticas seguras. Siempre incluimos advertencias importantes. Para problemas graves o peligrosos, recomendamos consultar a un profesional certificado. Tu seguridad es nuestra prioridad número uno.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" onkeypress="toggleFaqKeyboard(event)">
+                        <span>¿Tengo que pagar para usar la aplicación?</span>
+                        <span class="faq-toggle" aria-hidden="true">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, SolucionaTodo AI es completamente gratis. Puedes acceder a todas nuestras herramientas y 9 módulos especializados sin costo alguno. Queremos que todos puedan resolver sus problemas sin barreras económicas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" onkeypress="toggleFaqKeyboard(event)">
+                        <span>¿Qué tipo de problemas puedo resolver?</span>
+                        <span class="faq-toggle" aria-hidden="true">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Puedes resolver desde problemas de limpieza (manchas, desorden), tecnología (dispositivos dañados), cocina (recetas, problemas culinarios), plantas (diagnóstico y cuidado), bricolaje (reparaciones), regalos, ropa, organización y generación de ideas creativas con nuestros 9 módulos especializados.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" onkeypress="toggleFaqKeyboard(event)">
+                        <span>¿Puedo obtener ayuda personalizada?</span>
+                        <span class="faq-toggle" aria-hidden="true">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí. Cada módulo está diseñado para adaptar las soluciones a tu situación específica. Ingresa todos los detalles que puedas para obtener recomendaciones más personalizadas y precisas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" onkeypress="toggleFaqKeyboard(event)">
+                        <span>¿Qué tan rápido obtengo las soluciones?</span>
+                        <span class="faq-toggle" aria-hidden="true">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Instantáneamente. Después de llenar el formulario, la IA genera tu solución en segundos. No hay esperas, la tecnología funciona en tiempo real 24/7.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" onkeypress="toggleFaqKeyboard(event)">
+                        <span>¿Mi información personal está segura?</span>
+                        <span class="faq-toggle" aria-hidden="true">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tu privacidad es importante para nosotros. No almacenamos información personal innecesaria. Los datos que ingresas se utilizan solo para generar tu solución y se descartan después.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <div class="container">
+            <div id="solution-card" class="solution-card"></div>
+        </div>
+    </main>
+
+    <!-- ADS -->
+    <div class="ads-container">
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-5496281216080457"
+            data-ad-slot="AUTO"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+    </div>
+
+    <!-- MODALES -->
+    <div id="stain" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🧽 StainEraser TXT</h2>
+                <button class="close-btn" onclick="closeModal('stain')">×</button>
+            </div>
+            <form onsubmit="handleModule(event, 'stain')">
+                <div class="form-group">
+                    <label>Tipo de mancha</label>
+                    <input type="text" placeholder="ej: vino, café, sangre, grasa..." required>
+                </div>
+                <div class="form-group">
+                    <label>¿En qué material?</label>
+                    <select required>
+                        <option value="">Selecciona...</option>
+                        <option value="ropa">Ropa</option>
+                        <option value="tapiceria">Tapicería</option>
+                        <option value="alfombra">Alfombra</option>
+                        <option value="vidrio">Vidrio</option>
+                        <option value="piso">Piso</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>¿Hace cuánto tiempo?</label>
+                    <select required>
+                        <option value="">Selecciona...</option>
+                        <option value="minutos">Minutos (fresca)</option>
+                        <option value="horas">Horas</option>
+                        <option value="dias">Días (seca)</option>
+                    </select>
+                </div>
+                <button class="submit-btn">Generar solución</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="fixbot" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🔧 FixBot TXT</h2>
+                <button class="close-btn" onclick="closeModal('fixbot')">×</button>
+            </div>
+            <form onsubmit="handleModule(event, 'fixbot')">
+                <div class="form-group">
+                    <label>¿Qué dispositivo?</label>
+                    <select required>
+                        <option value="">Selecciona...</option>
+                        <option value="celular">Celular</option>
+                        <option value="laptop">Laptop</option>
+                        <option value="auriculares">Auriculares</option>
+                        <option value="consola">Consola</option>
+                        <option value="tv">TV</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Problema</label>
+                    <textarea placeholder="ej: no carga, pantalla negra..." required></textarea>
+                </div>
+                <button class="submit-btn">Generar diagnóstico</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="chef" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🍳 ChefAI TXT</h2>
+                <button class="close-btn" onclick="closeModal('chef')">×</button>
+            </div>
+            <form onsubmit="handleModule(event, 'chef')">
+                <div class="form-group">
+                    <label>Ingredientes (separados por coma)</label>
+                    <textarea placeholder="ej: pollo, cebolla, ajo, tomate..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Restricciones</label>
+                    <input type="text" placeholder="ej: sin lactosa, vegetariano...">
+                </div>
+                <div class="form-group">
+                    <label>Nivel de dificultad</label>
+                    <select required>
+                        <option value="facil">Fácil</option>
+                        <option value="medio">Medio</option>
+                        <option value="dificil">Difícil</option>
+                    </select>
+                </div>
+                <button class="submit-btn">Generar recetas</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="plant" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🌿 PlantDoctor TXT</h2>
+                <button class="close-btn" onclick="closeModal('plant')">×</button>
+            </div>
+            <form onsubmit="handleModule(event, 'plant')">
+                <div class="form-group">
+                    <label>¿Qué tipo de planta?</label>
+                    <input type="text" placeholder="ej: orquídea, monstera, rosa..." required>
+                </div>
+                <div class="form-group">
+                    <label>Síntomas</label>
+                    <textarea placeholder="ej: hojas amarillas, marchita, hongos..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>¿Cuánto tiempo la tienes?</label>
+                    <select required>
+                        <option value="poco">Semanas</option>
+                        <option value="medio">Meses</option>
+                        <option value="mucho">Años</option>
+                    </select>
+                </div>
+                <button class="submit-btn">Generar diagnóstico</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="gift" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🎁 GiftFinder TXT</h2>
+                <button class="close-btn" onclick="closeModal('gift')">×</button>
+            </div>
+            <form onsubmit="handleModule(event, 'gift')">
+                <div class="form-group">
+                    <label>¿Quién es la persona?</label>
+                    <input type="text" placeholder="ej: mamá, amigo, jefe..." required>
+                </div>
+                <div class="form-group">
+                    <label>¿Cuáles son sus intereses?</label>
+                    <textarea placeholder="ej: lectura, cocina, deportes, tecnología..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>¿Cuál es tu presupuesto?</label>
+                    <select required>
+                        <option value="">Selecciona...</option>
+                        <option value="economico">Económico ($20-50)</option>
+                        <option value="medio">Medio ($50-150)</option>
+                        <option value="alto">Alto (más de $150)</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Generar propuestas</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="laundry" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🧺 LaundryMaster TXT</h2>
+                <button class="close-btn" onclick="closeModal('laundry')">×</button>
+            </div>
+            <form onsubmit="handleModule(event, 'laundry')">
+                <div class="form-group">
+                    <label>¿Cuál es el problema?</label>
+                    <select required>
+                        <option value="">Selecciona...</option>
+                        <option value="encogida">Encogida</option>
+                        <option value="desteñida">Desteñida</option>
+                        <option value="olor">Mal olor</option>
+                        <option value="aspera">Áspera</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Tipo de tela</label>
+                    <input type="text" placeholder="ej: algodón, lana, seda..." required>
+                </div>
+                <button class="submit-btn">Generar solución</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="clutter" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>📦 ClearClutter TXT</h2>
+                <button class="close-btn" onclick="closeModal('clutter')">×</button>
+            </div>
+            <form onsubmit="handleModule(event, 'clutter')">
+                <div class="form-group">
+                    <label>¿Qué zona?</label>
+                    <select required>
+                        <option value="">Selecciona...</option>
+                        <option value="closet">Closet</option>
+                        <option value="cuarto">Cuarto</option>
+                        <option value="escritorio">Escritorio</option>
+                        <option value="cocina">Cocina</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Nivel de desorden</label>
+                    <select required>
+                        <option value="poco">Poco</option>
+                        <option value="medio">Medio</option>
+                        <option value="mucho">Muy desorganizado</option>
+                    </select>
+                </div>
+                <button class="submit-btn">Generar plan</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="flavor" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🧂 FlavorFix TXT</h2>
+                <button class="close-btn" onclick="closeModal('flavor')">×</button>
+            </div>
+            <form onsubmit="handleModule(event, 'flavor')">
+                <div class="form-group">
+                    <label>¿Qué salió mal?</label>
+                    <select required>
+                        <option value="">Selecciona...</option>
+                        <option value="salada">Muy salada</option>
+                        <option value="seca">Muy seca</option>
+                        <option value="amarga">Muy amarga</option>
+                        <option value="quemada">Quemada</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>¿Qué cocinaste?</label>
+                    <input type="text" placeholder="ej: sopa, pollo, arroz..." required>
+                </div>
+                <button class="submit-btn">Generar solución</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="ideas" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🧠 IdeaBooster TXT</h2>
+                <button class="close-btn" onclick="closeModal('ideas')">×</button>
+            </div>
+            <form onsubmit="handleModule(event, 'ideas')">
+                <div class="form-group">
+                    <label>¿Sobre qué tema?</label>
+                    <input type="text" placeholder="ej: contenido TikTok, nombres para negocio..." required>
+                </div>
+                <div class="form-group">
+                    <label>Contexto (opcional)</label>
+                    <textarea placeholder="ej: público objetivo, estilo..."></textarea>
+                </div>
+                <button class="submit-btn">Generar 20 ideas</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🛠️ SolucionaTodo AI</h3>
+                <p>Tu asistente inteligente para resolver problemas del día a día de forma rápida, confiable y gratuita.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Módulos</h3>
+                <a href="#modules">StainEraser</a>
+                <a href="#modules">FixBot</a>
+                <a href="#modules">ChefAI</a>
+                <a href="#modules">PlantDoctor</a>
+                <a href="#modules">IdeaBooster</a>
+            </div>
+            <div class="footer-section">
+                <h3>Empresa</h3>
+                <a href="#about">Acerca de</a>
+                <a href="#faq">Preguntas</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+            </div>
+            <p>&copy; 2025 SolucionaTodo AI. Todos los derechos reservados. Hecho con ❤️</p>
+        </div>
+    </footer>
+
+    <script>
+        const API_KEY = "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";
+
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+        }
+
+        function toggleFaq(element) {
+            element.parentElement.classList.toggle('active');
+        }
+
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('modal')) {
+                e.target.classList.remove('active');
+            }
+        });
+
+        async function handleModule(e, moduleId) {
+            e.preventDefault();
+            const form = e.target;
+            const inputs = Array.from(form.querySelectorAll('input, textarea, select')).map(el => el.value).filter(v => v);
+            const prompt = generatePrompt(moduleId, inputs);
+            
+            closeModal(moduleId);
+            showLoading();
+            scrollToSolution();
+
+            try {
+                const solution = await callAI(prompt);
+                displaySolution(moduleId, solution);
+            } catch (error) {
+                showError(error.message);
+            }
+        }
+
+        function generatePrompt(moduleId, inputs) {
+            const prompts = {
+                'stain': `Soy experto en limpieza. Mancha: ${inputs[0]}, Material: ${inputs[1]}, Antigüedad: ${inputs[2]}. Dame solución EXACTA paso a paso.`,
+                'fixbot': `Soy técnico. Dispositivo: ${inputs[0]}, Problema: ${inputs[1]}. Dame 6-8 pasos de solución prácticos.`,
+                'chef': `Soy chef. Ingredientes: ${inputs[0]}, Restricciones: ${inputs[1]}, Nivel: ${inputs[2]}. Dame 3 recetas con pasos exactos.`,
+                'plant': `Soy agrónomo. Planta: ${inputs[0]}, Síntomas: ${inputs[1]}, Antigüedad: ${inputs[2]}. Dame diagnóstico + tratamiento.`,
+                'gift': `Soy experto en regalos. Persona: ${inputs[0]}, Intereses: ${inputs[1]}, Presupuesto: ${inputs[2]}. Dame 10 propuestas específicas.`,
+                'laundry': `Soy experto en ropa. Problema: ${inputs[0]}, Tela: ${inputs[1]}. Dame solución + prevención.`,
+                'clutter': `Soy organizadora. Zona: ${inputs[0]}, Desorden: ${inputs[1]}. Dame plan de 10 minutos paso a paso.`,
+                'flavor': `Soy cocinero. Problema: ${inputs[0]}, Plato: ${inputs[1]}. Dame 3 soluciones inmediatas.`,
+                'ideas': `Generador de ideas creativo. Tema: ${inputs[0]}, Contexto: ${inputs[1]}. Dame EXACTAMENTE 20 ideas en lista numerada.`
+            };
+            return prompts[moduleId];
+        }
+
+        async function callAI(prompt) {
+            try {
+                const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+                    method: "POST",
+                    headers: {
+                        "Authorization": `Bearer ${API_KEY}`,
+                        "HTTP-Referer": window.location.href,
+                        "X-Title": "SolucionaTodo AI",
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        "model": "meta-llama/llama-3.3-70b-instruct:free",
+                        "messages": [{ "role": "user", "content": prompt }],
+                        "temperature": 0.7,
+                        "max_tokens": 1000
+                    })
+                });
+
+                if (!res.ok) {
+                    const errorText = await res.text();
+                    console.error("API Error:", errorText);
+                    throw new Error(`Error en API: ${res.status} - ${errorText}`);
+                }
+
+                const data = await res.json();
+                if (!data.choices || !data.choices[0] || !data.choices[0].message) {
+                    console.error("Invalid API response:", data);
+                    throw new Error("Respuesta inválida de la API");
+                }
+
+                return data.choices[0].message.content;
+            } catch (error) {
+                console.error("Error in callAI:", error);
+                throw new Error(`No se pudo conectar con el servicio: ${error.message}`);
+            }
+        }
+
+        function displaySolution(moduleId, content) {
+            const icons = {'stain': '🧽', 'fixbot': '🔧', 'chef': '🍳', 'plant': '🌿', 'gift': '🎁', 'laundry': '🧺', 'clutter': '📦', 'flavor': '🧂', 'ideas': '🧠'};
+            const titles = {'stain': 'Eliminar mancha', 'fixbot': 'Arreglar dispositivo', 'chef': 'Recetas', 'plant': 'Diagnóstico de planta', 'gift': 'Regalos', 'laundry': 'Ropa', 'clutter': 'Organización', 'flavor': 'Arreglar comida', 'ideas': '20 Ideas'};
+
+            const card = document.getElementById('solution-card');
+            let html = `<div class="solution-header"><h2>${icons[moduleId]} ${titles[moduleId]}</h2></div><div class="solution-actions"><button class="action-btn" onclick="copyToClipboard()">📋 Copiar</button><button class="action-btn" onclick="goHome()">← Volver</button></div>`;
+
+            if (moduleId === 'ideas') {
+                const ideas = content.split('\n').filter(l => l.trim());
+                html += '<div class="ideas-grid">' + ideas.map(idea => `<div class="idea-card"><p>${idea.replace(/^\d+\.\s*/, '')}</p></div>`).join('') + '</div>';
+            } else {
+                html += `<div style="background: #f8fafc; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #3b82f6;">${content.split('\n').map(line => `<p style="color: #475569; margin: 0.5rem 0; line-height: 1.8;">${line}</p>`).join('')}</div>`;
+            }
+
+            card.innerHTML = html;
+            card.classList.add('active');
+        }
+
+        function showLoading() {
+            const card = document.getElementById('solution-card');
+            card.innerHTML = '<div class="spinner"></div><p style="text-align: center; margin-top: 1rem;">🤖 Generando solución...</p>';
+            card.classList.add('active');
+        }
+
+        function showError(msg) {
+            document.getElementById('solution-card').innerHTML = `<div style="background: #fee2e2; border-left: 4px solid #dc2626; padding: 1.5rem; color: #991b1b;"><strong>⚠️ Error:</strong> ${msg}</div>`;
+            document.getElementById('solution-card').classList.add('active');
+        }
+
+        function scrollToSolution() {
+            document.getElementById('solution-card').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToModules() {
+            document.getElementById('modules').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function goHome() {
+            document.getElementById('solution-card').classList.remove('active');
+            document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function copyToClipboard() {
+            navigator.clipboard.writeText(document.getElementById('solution-card').innerText);
+            alert('✓ Copiado');
+        }
+
+        // Búsqueda principal
+        document.getElementById('search-btn').addEventListener('click', async () => {
+            const text = document.getElementById('main-search').value.trim();
+            if (!text) { alert('Describe tu problema'); return; }
+
+            showLoading();
+            scrollToSolution();
+
+            try {
+                const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+                    method: "POST",
+                    headers: {
+                        "Authorization": `Bearer ${API_KEY}`,
+                        "HTTP-Referer": window.location.href,
+                        "X-Title": "SolucionaTodo AI",
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        "model": "meta-llama/llama-3.3-70b-instruct:free",
+                        "messages": [{ "role": "user", "content": `Solución DETALLADA para: "${text}". Incluye: título, tiempo, materiales, advertencias, pasos (mínimo 6), consejos.` }],
+                        "temperature": 0.7,
+                        "max_tokens": 1000
+                    })
+                });
+
+                if (!res.ok) {
+                    const errorText = await res.text();
+                    console.error("API Error:", errorText);
+                    throw new Error(`Error en API: ${res.status} - ${errorText}`);
+                }
+
+                const data = await res.json();
+                if (!data.choices || !data.choices[0] || !data.choices[0].message) {
+                    console.error("Invalid API response:", data);
+                    throw new Error("Respuesta inválida de la API");
+                }
+
+                const card = document.getElementById('solution-card');
+                const solution = data.choices[0].message.content;
+                card.innerHTML = `<div style="background: #f8fafc; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #3b82f6;">${solution.split('\n').map(line => `<p style="color: #475569; margin: 0.5rem 0; line-height: 1.8;">${line}</p>`).join('')}</div><div class="solution-actions" style="margin-top: 1.5rem;"><button class="action-btn" onclick="copyToClipboard()">📋 Copiar</button><button class="action-btn" onclick="goHome()">← Volver</button></div>`;
+                card.classList.add('active');
+            } catch (e) {
+                console.error("Error en búsqueda:", e);
+                showError(e.message);
+            }
+        });
+
+        document.getElementById('main-search').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') document.getElementById('search-btn').click();
+        });
+    </script>
+</body>
+</html>
