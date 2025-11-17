@@ -1921,6 +1921,10 @@
         // Railway: "https://tu-proyecto.up.railway.app/api/ai"
         const API_URL = "https://tu-backend-aqui.com/api/ai";
 
+        // Token de autenticación para el backend - obtener desde /api/token en desarrollo
+        // En producción, configurar como variable de entorno segura
+        const API_TOKEN = "tu-token-seguro-aqui";
+
         function openModal(id) {
             document.getElementById(id).classList.add('active');
         }
@@ -1977,7 +1981,8 @@
                 const res = await fetch(API_URL, {
                     method: "POST",
                     headers: {
-                        "Content-Type": "application/json"
+                        "Content-Type": "application/json",
+                        "X-API-Token": API_TOKEN
                     },
                     body: JSON.stringify({
                         "model": "meta-llama/llama-3.3-70b-instruct:free",
@@ -2065,7 +2070,8 @@
                 const res = await fetch(API_URL, {
                     method: "POST",
                     headers: {
-                        "Content-Type": "application/json"
+                        "Content-Type": "application/json",
+                        "X-API-Token": API_TOKEN
                     },
                     body: JSON.stringify({
                         "model": "meta-llama/llama-3.3-70b-instruct:free",
