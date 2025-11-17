@@ -1914,7 +1914,12 @@
     </footer>
 
     <script>
-        const API_KEY = "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";
+        // URL del backend seguro - reemplazar con tu URL de producción
+        // Ejemplos:
+        // Netlify: "https://tu-proyecto.netlify.app/api/ai"
+        // Render: "https://tu-proyecto.onrender.com/api/ai"
+        // Railway: "https://tu-proyecto.up.railway.app/api/ai"
+        const API_URL = "https://tu-backend-aqui.com/api/ai";
 
         function openModal(id) {
             document.getElementById(id).classList.add('active');
@@ -1969,12 +1974,9 @@
 
         async function callAI(prompt) {
             try {
-                const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+                const res = await fetch(API_URL, {
                     method: "POST",
                     headers: {
-                        "Authorization": `Bearer ${API_KEY}`,
-                        "HTTP-Referer": window.location.href,
-                        "X-Title": "SolucionaTodo AI",
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
@@ -2060,12 +2062,9 @@
             scrollToSolution();
 
             try {
-                const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+                const res = await fetch(API_URL, {
                     method: "POST",
                     headers: {
-                        "Authorization": `Bearer ${API_KEY}`,
-                        "HTTP-Referer": window.location.href,
-                        "X-Title": "SolucionaTodo AI",
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
