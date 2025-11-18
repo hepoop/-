@@ -1195,6 +1195,152 @@
             }
         }
 
+        /* GLASSMORPHISM DESIGN */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            color: #1e293b;
+            transition: all 0.3s ease;
+        }
+        
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(31, 38, 135, 0.25);
+        }
+        
+        /* SOLUTION CONTENT STYLING */
+        .solution-content {
+            margin-bottom: 2rem;
+        }
+        
+        .summary-section, .diagnosis-section, .solution-section, .advanced-section, .warning-section, .time-section, .info-section, .final-section {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 1.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(59, 130, 246, 0.3);
+        }
+        
+        .summary-section { color: #3b82f6; }
+        .diagnosis-section { color: #8b5cf6; }
+        .solution-section { color: #10b981; }
+        .advanced-section { color: #f59e0b; }
+        .warning-section { color: #ef4444; }
+        .time-section { color: #06b6d4; }
+        .info-section { color: #6366f1; }
+        .final-section { color: #ec4899; }
+        
+        .bullet-point, .step-point {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin: 0.8rem 0;
+            padding-left: 1rem;
+        }
+        
+        .step-point {
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .regular-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin: 1rem 0;
+        }
+        
+        /* PRODUCT CARD DESIGN */
+        .product-section {
+            margin: 3rem 0;
+        }
+        
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            overflow: hidden;
+        }
+        
+        .product-image-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 15px;
+            position: relative;
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            text-align: center;
+        }
+        
+        .product-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #1e293b;
+        }
+        
+        .product-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: #475569;
+        }
+        
+        .buy-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            font-weight: 600;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .buy-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .buy-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
+        }
+        
+        .buy-button:hover::before {
+            left: 100%;
+        }
+        
+        
+        
+        
+        
         /* ACCESSIBILITY */
         a:focus, button:focus {
             outline: 2px solid #3b82f6;
@@ -1914,7 +2060,7 @@
     </footer>
 
     <script>
-        const API_KEY = "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";
+        const API_KEY = "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";
 
         function openModal(id) {
             document.getElementById(id).classList.add('active');
@@ -1953,32 +2099,89 @@
         }
 
         function generatePrompt(moduleId, inputs) {
+            const basePrompt = `🚀 PROMPT DEFINITIVO — Respuestas IA Perfectas, Premium y Ultra Útiles
+Quiero que generes la mejor respuesta posible: completa, clara, visual, útil y muy bien estructurada. La solución debe ser precisa, accionable y con pasos fáciles de aplicar. Siempre responde con este formato:
+
+📌 FORMATO OBLIGATORIO
+🎯 Resumen rápido
+Explica en 1 o 2 frases exactamente cuál es el problema y la solución general.
+
+🧠 Diagnóstico detallado
+• Qué está pasando.
+• Por qué ocurre.
+• Causas probables (pantallable y claras).
+
+✅ Solución paso a paso (muy fácil de seguir)
+1. Paso concreto.
+2. Paso concreto.
+3. Paso concreto.
+4. Paso final.
+
+🛠️ Solución avanzada (si lo básico no funciona)
+• Alternativas más profundas o técnicas.
+• Métodos caseros + métodos recomendados por expertos.
+
+⚠️ Errores comunes que debes evitar
+• Error 1
+• Error 2
+• Error 3
+
+⏱️ Tiempo estimado
+Tiempo real que tardará en aplicarse cada solución.
+
+🧩 Si falta información
+Pide solo los detalles más importantes para mejorar la solución.
+
+⭐ Recomendación final
+1 frase muy breve y poderosa con el consejo clave.
+
+🎨 ESTILO DE RESPUESTA OBLIGATORIO
+Muy visual, con emojis relevantes.
+Claridad total, nada de relleno.
+Tono profesional, amigable y directo.
+Pasos concretos, nunca vagos.
+Soluciones que realmente funcionan.
+Nunca inventar datos técnicos falsos.
+Si hay riesgo, indícalo de forma responsable.
+
+💎 REGLAS EXTRAS PARA QUE SEA LA MEJOR RESPUESTA POSIBLE
+Siempre:
+Ofrece 2–3 soluciones alternativas.
+Evita tecnicismos innecesarios.
+Simplifica problemas complejos en ideas fáciles.
+Anticipa dudas del usuario y respóndelas dentro de la guía.
+Sugiere herramientas caseras y profesionales cuando apliquen.
+Optimiza para comprensión inmediata.
+
+🏆 OBJETIVO
+La respuesta debe sentirse como una guía premium creada por un experto real, lista para guardar, imprimir o seguir al instante.
+
+`;
+            
             const prompts = {
-                'stain': `Soy experto en limpieza. Mancha: ${inputs[0]}, Material: ${inputs[1]}, Antigüedad: ${inputs[2]}. Dame solución EXACTA paso a paso.`,
-                'fixbot': `Soy técnico. Dispositivo: ${inputs[0]}, Problema: ${inputs[1]}. Dame 6-8 pasos de solución prácticos.`,
-                'chef': `Soy chef. Ingredientes: ${inputs[0]}, Restricciones: ${inputs[1]}, Nivel: ${inputs[2]}. Dame 3 recetas con pasos exactos.`,
-                'plant': `Soy agrónomo. Planta: ${inputs[0]}, Síntomas: ${inputs[1]}, Antigüedad: ${inputs[2]}. Dame diagnóstico + tratamiento.`,
-                'gift': `Soy experto en regalos. Persona: ${inputs[0]}, Intereses: ${inputs[1]}, Presupuesto: ${inputs[2]}. Dame 10 propuestas específicas.`,
-                'laundry': `Soy experto en ropa. Problema: ${inputs[0]}, Tela: ${inputs[1]}. Dame solución + prevención.`,
-                'clutter': `Soy organizadora. Zona: ${inputs[0]}, Desorden: ${inputs[1]}. Dame plan de 10 minutos paso a paso.`,
-                'flavor': `Soy cocinero. Problema: ${inputs[0]}, Plato: ${inputs[1]}. Dame 3 soluciones inmediatas.`,
-                'ideas': `Generador de ideas creativo. Tema: ${inputs[0]}, Contexto: ${inputs[1]}. Dame EXACTAMENTE 20 ideas en lista numerada.`
+                'stain': `${basePrompt}\n\nCONTEXTUALIZACIÓN: Soy experto en limpieza. Mancha: ${inputs[0]}, Material: ${inputs[1]}, Antigüedad: ${inputs[2]}. Dame solución EXACTA paso a paso.`,
+                'fixbot': `${basePrompt}\n\nCONTEXTUALIZACIÓN: Soy técnico. Dispositivo: ${inputs[0]}, Problema: ${inputs[1]}. Dame 6-8 pasos de solución prácticos.`,
+                'chef': `${basePrompt}\n\nCONTEXTUALIZACIÓN: Soy chef. Ingredientes: ${inputs[0]}, Restricciones: ${inputs[1]}, Nivel: ${inputs[2]}. Dame 3 recetas con pasos exactos.`,
+                'plant': `${basePrompt}\n\nCONTEXTUALIZACIÓN: Soy agrónomo. Planta: ${inputs[0]}, Síntomas: ${inputs[1]}, Antigüedad: ${inputs[2]}. Dame diagnóstico + tratamiento.`,
+                'gift': `${basePrompt}\n\nCONTEXTUALIZACIÓN: Soy experto en regalos. Persona: ${inputs[0]}, Intereses: ${inputs[1]}, Presupuesto: ${inputs[2]}. Dame 10 propuestas específicas.`,
+                'laundry': `${basePrompt}\n\nCONTEXTUALIZACIÓN: Soy experto en ropa. Problema: ${inputs[0]}, Tela: ${inputs[1]}. Dame solución + prevención.`,
+                'clutter': `${basePrompt}\n\nCONTEXTUALIZACIÓN: Soy organizadora. Zona: ${inputs[0]}, Desorden: ${inputs[1]}. Dame plan de 10 minutos paso a paso.`,
+                'flavor': `${basePrompt}\n\nCONTEXTUALIZACIÓN: Soy cocinero. Problema: ${inputs[0]}, Plato: ${inputs[1]}. Dame 3 soluciones inmediatas.`,
+                'ideas': `${basePrompt}\n\nCONTEXTUALIZACIÓN: Generador de ideas creativo. Tema: ${inputs[0]}, Contexto: ${inputs[1]}. Dame EXACTAMENTE 20 ideas en lista numerada.`
             };
             return prompts[moduleId];
         }
 
         async function callAI(prompt) {
             try {
-                const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+                const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
                     method: "POST",
                     headers: {
                         "Authorization": `Bearer ${API_KEY}`,
-                        "HTTP-Referer": window.location.href,
-                        "X-Title": "SolucionaTodo AI",
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        "model": "meta-llama/llama-3.3-70b-instruct:free",
+                        "model": "meta-llama/llama-4-scout-17b-16e-instruct",
                         "messages": [{ "role": "user", "content": prompt }],
                         "temperature": 0.7,
                         "max_tokens": 1000
@@ -2013,9 +2216,42 @@
 
             if (moduleId === 'ideas') {
                 const ideas = content.split('\n').filter(l => l.trim());
-                html += '<div class="ideas-grid">' + ideas.map(idea => `<div class="idea-card"><p>${idea.replace(/^\d+\.\s*/, '')}</p></div>`).join('') + '</div>';
+                html += '<div class="ideas-grid">' + ideas.map(idea => `<div class="idea-card glass-card"><p>${idea.replace(/^\d+\.\s*/, '')}</p></div>`).join('') + '</div>';
             } else {
-                html += `<div style="background: #f8fafc; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #3b82f6;">${content.split('\n').map(line => `<p style="color: #475569; margin: 0.5rem 0; line-height: 1.8;">${line}</p>`).join('')}</div>`;
+                let solutionContent = content;
+                
+                // Renderizar el contenido de la solución
+                html += `<div class="solution-content glass-card">${solutionContent.split('\n').map(line => {
+                    if (line.startsWith('🎯')) {
+                        return `<h3 class="summary-section">${line}</h3>`;
+                    } else if (line.startsWith('🧠')) {
+                        return `<h3 class="diagnosis-section">${line}</h3>`;
+                    } else if (line.startsWith('✅')) {
+                        return `<h3 class="solution-section">${line}</h3>`;
+                    } else if (line.startsWith('🛠️')) {
+                        return `<h3 class="advanced-section">${line}</h3>`;
+                    } else if (line.startsWith('⚠️')) {
+                        return `<h3 class="warning-section">${line}</h3>`;
+                    } else if (line.startsWith('⏱️')) {
+                        return `<h3 class="time-section">${line}</h3>`;
+                    } else if (line.startsWith('🧩')) {
+                        return `<h3 class="info-section">${line}</h3>`;
+                    } else if (line.startsWith('⭐')) {
+                        return `<h3 class="final-section">${line}</h3>`;
+                    } else if (line.startsWith('•')) {
+                        return `<p class="bullet-point">${line}</p>`;
+                    } else if (/^\d+\./.test(line)) {
+                        return `<p class="step-point">${line}</p>`;
+                    } else if (line.trim()) {
+                        return `<p class="regular-text">${line}</p>`;
+                    }
+                    return '';
+                }).join('')}</div>`;
+                
+                // Añadir la sección de producto si existe
+                if (productSection) {
+                    html += productSection;
+                }
             }
 
             card.innerHTML = html;
@@ -2060,17 +2296,74 @@
             scrollToSolution();
 
             try {
-                const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+                const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
                     method: "POST",
                     headers: {
                         "Authorization": `Bearer ${API_KEY}`,
-                        "HTTP-Referer": window.location.href,
-                        "X-Title": "SolucionaTodo AI",
                         "Content-Type": "application/json"
                     },
                     body: JSON.stringify({
-                        "model": "meta-llama/llama-3.3-70b-instruct:free",
-                        "messages": [{ "role": "user", "content": `Solución DETALLADA para: "${text}". Incluye: título, tiempo, materiales, advertencias, pasos (mínimo 6), consejos.` }],
+                        "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+                        "messages": [{ "role": "user", "content": `🚀 PROMPT DEFINITIVO — Respuestas IA Perfectas, Premium y Ultra Útiles
+Quiero que generes la mejor respuesta posible: completa, clara, visual, útil y muy bien estructurada. La solución debe ser precisa, accionable y con pasos fáciles de aplicar. Siempre responde con este formato:
+
+📌 FORMATO OBLIGATORIO
+🎯 Resumen rápido
+Explica en 1 o 2 frases exactamente cuál es el problema y la solución general.
+
+🧠 Diagnóstico detallado
+• Qué está pasando.
+• Por qué ocurre.
+• Causas probables (pantallable y claras).
+
+✅ Solución paso a paso (muy fácil de seguir)
+1. Paso concreto.
+2. Paso concreto.
+3. Paso concreto.
+4. Paso final.
+
+🛠️ Solución avanzada (si lo básico no funciona)
+• Alternativas más profundas o técnicas.
+• Métodos caseros + métodos recomendados por expertos.
+
+⚠️ Errores comunes que debes evitar
+• Error 1
+• Error 2
+• Error 3
+
+⏱️ Tiempo estimado
+Tiempo real que tardará en aplicarse cada solución.
+
+🧩 Si falta información
+Pide solo los detalles más importantes para mejorar la solución.
+
+⭐ Recomendación final
+1 frase muy breve y poderosa con el consejo clave.
+
+🎨 ESTILO DE RESPUESTA OBLIGATORIO
+Muy visual, con emojis relevantes.
+Claridad total, nada de relleno.
+Tono profesional, amigable y directo.
+Pasos concretos, nunca vagos.
+Soluciones que realmente funcionan.
+Nunca inventar datos técnicos falsos.
+Si hay riesgo, indícalo de forma responsable.
+
+💎 REGLAS EXTRAS PARA QUE SEA LA MEJOR RESPUESTA POSIBLE
+Siempre:
+Ofrece 2–3 soluciones alternativas.
+Evita tecnicismos innecesarios.
+Simplifica problemas complejos en ideas fáciles.
+Anticipa dudas del usuario y respóndelas dentro de la guía.
+Sugiere herramientas caseras y profesionales cuando apliquen.
+Optimiza para comprensión inmediata.
+
+🏆 OBJETIVO
+La respuesta debe sentirse como una guía premium creada por un experto real, lista para guardar, imprimir o seguir al instante.
+
+
+
+CONTEXTUALIZACIÓN: Solución DETALLADA para: "${text}".` }],
                         "temperature": 0.7,
                         "max_tokens": 1000
                     })
@@ -2090,7 +2383,77 @@
 
                 const card = document.getElementById('solution-card');
                 const solution = data.choices[0].message.content;
-                card.innerHTML = `<div style="background: #f8fafc; padding: 1.5rem; border-radius: 10px; border-left: 4px solid #3b82f6;">${solution.split('\n').map(line => `<p style="color: #475569; margin: 0.5rem 0; line-height: 1.8;">${line}</p>`).join('')}</div><div class="solution-actions" style="margin-top: 1.5rem;"><button class="action-btn" onclick="copyToClipboard()">📋 Copiar</button><button class="action-btn" onclick="goHome()">← Volver</button></div>`;
+                
+                // Buscar si hay una sección de producto recomendado
+                const productMatch = solution.match(/🛒 Recomendación Inteligente([\s\S]*?)(?=\n\n|$)/);
+                let productSection = '';
+                let solutionContent = solution;
+                
+                if (productMatch) {
+                    const productText = productMatch[0];
+                    const productTitleMatch = productText.match(/Producto recomendado: (.+)/);
+                    const productReasonMatch = productText.match(/Por qué ayuda: (.+)/);
+                    const productLinkMatch = productText.match(/Enlace de compra: (.+)/);
+                    
+                    if (productTitleMatch && productReasonMatch && productLinkMatch) {
+                        const asinMatch = productLinkMatch[1].match(/dp\/([A-Z0-9]+)/);
+                        const asin = asinMatch ? asinMatch[1] : '';
+                        
+                        productSection = `
+                        <div class="product-section">
+                            <h3 class="section-title">🛒 Recomendación Inteligente</h3>
+                            <div class="product-card glass-card">
+                                <div class="product-image-container">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/P/${asin}.01._SCMZZZZZZZ_.jpg" alt="${productTitleMatch[1]}" class="product-image" onerror="this.src='https://picsum.photos/seed/product${asin}/300/300.jpg'">
+                                </div>
+                                <div class="product-info">
+                                    <h4 class="product-title">${productTitleMatch[1]}</h4>
+                                    <p class="product-description">${productReasonMatch[1]}</p>
+                                    <a href="${productLinkMatch[1]}" target="_blank" rel="noopener noreferrer" class="buy-button">Comprar en Amazon</a>
+                                </div>
+                            </div>
+                        </div>`;
+                        
+                        // Eliminar la sección de producto del contenido principal
+                        solutionContent = solution.replace(productText, '').trim();
+                    }
+                }
+                
+                // Renderizar el contenido de la solución
+                let html = `<div class="solution-header"><h2>🔍 Solución a tu problema</h2></div><div class="solution-actions"><button class="action-btn" onclick="copyToClipboard()">📋 Copiar</button><button class="action-btn" onclick="goHome()">← Volver</button></div>`;
+                html += `<div class="solution-content glass-card">${solutionContent.split('\n').map(line => {
+                    if (line.startsWith('🎯')) {
+                        return `<h3 class="summary-section">${line}</h3>`;
+                    } else if (line.startsWith('🧠')) {
+                        return `<h3 class="diagnosis-section">${line}</h3>`;
+                    } else if (line.startsWith('✅')) {
+                        return `<h3 class="solution-section">${line}</h3>`;
+                    } else if (line.startsWith('🛠️')) {
+                        return `<h3 class="advanced-section">${line}</h3>`;
+                    } else if (line.startsWith('⚠️')) {
+                        return `<h3 class="warning-section">${line}</h3>`;
+                    } else if (line.startsWith('⏱️')) {
+                        return `<h3 class="time-section">${line}</h3>`;
+                    } else if (line.startsWith('🧩')) {
+                        return `<h3 class="info-section">${line}</h3>`;
+                    } else if (line.startsWith('⭐')) {
+                        return `<h3 class="final-section">${line}</h3>`;
+                    } else if (line.startsWith('•')) {
+                        return `<p class="bullet-point">${line}</p>`;
+                    } else if (/^\d+\./.test(line)) {
+                        return `<p class="step-point">${line}</p>`;
+                    } else if (line.trim()) {
+                        return `<p class="regular-text">${line}</p>`;
+                    }
+                    return '';
+                }).join('')}</div>`;
+                
+                // Añadir la sección de producto si existe
+                if (productSection) {
+                    html += productSection;
+                }
+                
+                card.innerHTML = html;
                 card.classList.add('active');
             } catch (e) {
                 console.error("Error en búsqueda:", e);
@@ -2101,6 +2464,8 @@
         document.getElementById('main-search').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') document.getElementById('search-btn').click();
         });
+        
+        
     </script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+# Configuración para Netlify
+[build]
+  # Directorio que contiene el frontend estático
+  publish = "."
+
+# Configuración de funciones serverless
+[functions]
+  # Directorio que contiene las funciones
+  directory = "netlify/functions"
+
+# Redirecciones para la API
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# Headers de seguridad
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Headers para la API
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "https://solucionatodo.ai"
+    Access-Control-Allow-Methods = "POST"
+    Access-Control-Allow-Headers = "Content-Type, Authorization, X-API-Token"

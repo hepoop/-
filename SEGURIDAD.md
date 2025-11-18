@@ -37,7 +37,7 @@ Implementación segura con GitHub Pages y backend protegido.
 npm install express cors node-fetch express-rate-limit crypto
 
 # Configurar variables de entorno
-export OPENROUTER_API_KEY="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"
+export OPENROUTER_API_KEY="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"
 export FRONTEND_TOKEN="token-seguro-aleatorio"
 
 # Iniciar servidor
